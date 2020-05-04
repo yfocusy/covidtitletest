@@ -8,4 +8,4 @@ build:
   ci:
     - shippable_retry npm install -g newman
     - pwd
-    - newman run $SHIPPABLE_BUILD_DIR/covidtitletest/newmanapitest.postman_collection.json
+    - newman run newmanapitest.postman_collection.json
