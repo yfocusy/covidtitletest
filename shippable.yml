@@ -3,9 +3,9 @@ node_js:
   - 13.12.0
 
 
- before_script:
-    - mkdir -p shippable/testresults
-    - mkdir -p shippable/codecoverage
+before_script:
+  - mkdir -p shippable/testresults
+  - mkdir -p shippable/codecoverage
 
 
 build:
