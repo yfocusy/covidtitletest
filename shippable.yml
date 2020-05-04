@@ -7,3 +7,5 @@ node_js:
 build:
   ci:
     - shippable_retry npm install -g newman
+    - pwd
+    - newman run $SHIPPABLE_BUILD_DIR/covidtitletest/newmanapitest.postman_collection.json
