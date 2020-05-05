@@ -4,7 +4,7 @@
   "description": "covid articles title testing",
   "main": "index.js",
   "scripts": {
-    "test": "newman run newmanapitest.postman_collection.json -r html"
+    "test": "newman run ./test/*.json -r html"
   },
   "repository": {
     "type": "git",
