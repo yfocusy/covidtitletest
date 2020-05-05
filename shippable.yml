@@ -10,9 +10,14 @@ before_script:
 
 build:
   ci:
-    - shippable_retry npm install -g newman
-    - shippable_retry npm install -g newman-reporter-html
-    - pwd
-    # - newman run newmanapitest.postman_collection.json
-    - newman run newmanapitest.postman_collection.json -r html
-    - cp -r $SHIPPABLE_BUILD_DIR/newman/ ./shippable/testresults
+    # - shippable_retry npm install -g newman
+    # - shippable_retry npm install -g newman-reporter-html
+    # - pwd
+    # # - newman run newmanapitest.postman_collection.json
+    # - newman run newmanapitest.postman_collection.json -r html
+    # - cp -r $SHIPPABLE_BUILD_DIR/newman/ ./shippable/testresults
+   - shippable_retry npm install
+   - pwd
+  # - newman run newmanapitest.postman_collection.json
+   - npm test
+   - cp -r $SHIPPABLE_BUILD_DIR/newman/ ./shippable/testresults

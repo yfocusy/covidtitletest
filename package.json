@@ -1,0 +1,23 @@
+{
+  "name": "covidtitletest",
+  "version": "1.0.0",
+  "description": "covid articles title testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run newmanapitest.postman_collection.json -r html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://yfocusy@github.com/yfocusy/covidtitletest.git"
+  },
+  "author": "Li Yu",
+  "license": "ISC",
+  "devDependencies": {
+    "newman": "^5.0.0",
+    "newman-reporter-html": "1.0.5"
+  },
+  "bugs": {
+    "url": "https://github.com/yfocusy/covidtitletest/issues"
+  },
+  "homepage": "https://github.com/yfocusy/covidtitletest#readme"
+}
