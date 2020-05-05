@@ -4,7 +4,7 @@
 ### What is this repo for? 
 
 - This is a sample practise about running Newman API script in Shippable CI. 
-- It is checking all returned articles have COVID as titles on (newsapi.org|https://newsapi.org/).
+- It is checking all returned articles have COVID as titles on [newsapi.org](https://newsapi.org/).
 - Version 1.0 
 
 
